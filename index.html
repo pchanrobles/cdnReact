@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <!-- //react -->
+    <div id="root">
+    </div>
+    <script type='text/babel'>
+        //Estados = al valor actual = 0 o donde comienza.
+        // const Interpolar = () => {
+        //     const [state, setState]= React.useState(0)
+        //     setInterval(()=>{
+        //         setState(state );
+        //     }, 1000);
+        //     console.log(state)
+
+        //     return (
+        //         <div>
+        //             <h1>Fecha: {state}</h1>
+        //             <hr />
+        //         </div>)
+        // }
+
+        // ReactDOM.render(<Interpolar></Interpolar>, document.getElementById('root'))
+
+// ___________________________________________________________________
+        //interpolar variables--- (mensajes a usuarios)
+        // const Interpolar = () => {
+        //     const nombre = prompt('cual es tu nombre?')
+
+        //     return (
+        //         <div>
+        //             <h1>Hola {nombre}</h1>
+        //             <hr />
+        //         </div>)
+        // }
+
+        // ReactDOM.render(<Interpolar></Interpolar>, document.getElementById('root'))
+
+    // ------------------------------------------------------------------
+        //componentes funcionales (es mejor y mas facil igual si quiero pintar una lista utilizo paranentesis en el return)
+        // const Saludo = () => {
+        //     return <h1>Hola a Todos</h1>
+        // }
+        // ReactDOM.render(<Saludo></Saludo>, document.getElementById('root'))
+// ------------------------------------------------------------------------------------------
+        //Class Components - (Legacy 'el legado')
+        // class Saludo extends React.Component {
+        //     render() {
+        //         //return sin parentesis si es solo una linea
+        //         //return <h1>Hola - Lo heredado -legacy</h1>
+
+        //         //return con parentesis si es mas de una linea ej:
+        //         return (
+        //             <ul>
+        //                 <li>nombre</li>
+        //                 <li>edad</li>
+        //                 <li>email</li>
+        //             </ul>
+        //         )
+        //     }
+        // }
+        // ReactDOM.render(<Saludo></Saludo>, document.getElementById('root'))
+
+// -----------------------------------------------------------------------
+        // ReactDOM.render(
+        //     // crear y pintar hola mundo
+        //     // React.createElement('h1', null, 'Hola mundo'),
+
+        //    //pintar una lista
+        //     <div>
+        //         <ul>
+        //             <li>manzana</li>
+        //             <li>mango</li>
+        //             <li>uva</li>
+        //         </ul>
+        //     </div>,
+        //     document.getElementById('root')
+        // )
+    </script>
+
+</body>
+
+</html>
